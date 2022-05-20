@@ -9,7 +9,8 @@ class App extends Component {
     productos: [
       { name: 'Hibiscus', price: 250, img: './producto/mascabo.jpg'},
       { name: 'Edulcorante', price: 500, img: './producto/nueces-mariposa-blanca-premium.jpg'},
-      { name: 'Pasta de mani', price: 200, img: './producto/tomate (1).jpg'},
+      { name: 'Pasta de mani', price: 200, img: './producto/tomate1.jpg'},
+      { name: 'Hibiscus', price: 250, img: './producto/arbejas.jpg'},
     ]
   }
   render() {
