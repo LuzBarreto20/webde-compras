@@ -10,10 +10,6 @@ class App extends Component {
       { name: 'Hibiscus', price: 250, img: './producto/mascabo.jpg'},
       { name: 'Edulcorante', price: 500, img: './producto/nueces-mariposa-blanca-premium.jpg'},
       { name: 'Pasta de mani', price: 200, img: './producto/tomate (1).jpg'},
-      
-      
-     
-
     ]
   }
   render() {
