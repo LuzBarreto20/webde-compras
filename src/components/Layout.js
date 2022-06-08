@@ -1,19 +1,12 @@
-import { Component } from "react";
+import React from "react";
 
 const styles = {
   layout: {
-    margin: '30px 120px',
+    margin: "30px 250px",
     /*background: 'red',*/
-}
+  },
 };
-class Layout extends Component {
-  render() {
-    return (
-        <div style={styles.layout}>
-          {this.props.children}
-          </div>
-      
-    );
-  }
-}
+const Layout = ({children}) => {
+  return <div style={styles.layout}>{children}</div>;
+};
 export default Layout;

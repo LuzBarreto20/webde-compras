@@ -1,4 +1,3 @@
-import Box from '@mui/material/Box';
 import { Grid } from "@mui/material";
 import { Component } from "react";
 import Producto from "./Producto";
@@ -8,35 +7,24 @@ const styles = {
     display: "flex",
     flexflow: "row wrap",
     justifyContent: "space-between",
-    
   },
 };
 
-export const Productos = ({productos, agregarAlCarro}) =>  {
+export const Productos = ({ productos, agregarAlCarro }) => {
 
-  
-   /* const { } = this.props*/
-
-    return (
-      < Box sx={{ flexGrow: 1 }}> 
-      <Grid container
-       
-       spacing={2}
-       
-      >
-        
-       
-        {productos.map(producto => 
+  return (
+    <div>
+      <Grid container spacing={8}  >
+        {productos.map((producto) => (
           <Producto
             agregarAlCarro={agregarAlCarro}
             key={producto.name}
             producto={producto}
           />
-        )}
-         </Grid>
-         </Box>
-      
-    );
-  }
+        ))}
+      </Grid>
+    </div>
+  );
+};
 
 export default Productos;
